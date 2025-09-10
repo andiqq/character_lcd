@@ -45,7 +45,7 @@ pico_enable_stdio_uart(character_lcd 0)
 pico_enable_stdio_usb(character_lcd 0)
 
 # Add the standard library to the build
-target_link_libraries(character_lcd
+target_link_libraries(character_lcd 
         pico_stdlib 
         hardware_i2c)
 
